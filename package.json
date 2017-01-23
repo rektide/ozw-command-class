@@ -1,0 +1,20 @@
+{
+	"name": "ozw-command-classes",
+	"version": "1.0.0",
+	"main": "ozw-command-classes.js",
+	"scripts": {
+		"prepublish": "cat .build/list | ./.build/parseList.js > commandClasses.json; cat commandClasses.json | ./.build/invert.js > lookup.json",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://archive.voodoowarez.com/ozw-command-classes"
+	},
+	"keywords": [],
+	"author": "rektide de la faye",
+	"license": "X11",
+	"description": "",
+	"devDependencies": {
+		"byline": "^5.0.0"
+	}
+}
